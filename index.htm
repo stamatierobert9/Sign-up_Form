@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <!-- LEFT SIDE with background image -->
+    <div class="left-panel">
+
+        <!-- Background image container -->
+        <div class="background-overlay">
+            <img src="images/backround.jpg" alt="Odin Background" class="odin-bg">
+        </div>
+  
+        <!-- Semi-transparent overlay for the logo -->
+        <div class="logo-overlay">
+            <img src="images/odin-logo.png" alt="Odin Logo" class="odin-logo">
+			<h1 class="odin-text">ODIN</h1>
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT SIDE with text and form -->
+    <div class="right-panel">
+
+      <!-- Top text block -->
+      <div class="intro-text">
+        <h2>This is not a real online service!</h2>
+        <p>You know you need something like this in your life to help you realize your deepest dreams.
+        Sign up <em>now</em> to get started.</p>
+        <p>You <strong>know</strong> you want to.</p>
+      </div>
+
+      <!-- Form title -->
+      <h3>Let's do this!</h3>
+
+      <!-- Sign Up Form -->
+      <form class="sign-up-form" action="#" method="POST" novalidate>
+
+        <div class="input-row">
+          <div class="form-control">
+            <label for="first-name">First Name</label>
+            <input 
+              type="text" 
+              id="first-name" 
+              name="first-name" 
+              placeholder="First Name" 
+              required
+            >
+          </div>
+
+          <div class="form-control">
+            <label for="last-name">Last Name</label>
+            <input 
+              type="text" 
+              id="last-name" 
+              name="last-name" 
+              placeholder="Last Name" 
+              required
+            >
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="Email" 
+              required
+            >
+          </div>
+
+          <div class="form-control">
+            <label for="phone">Phone Number</label>
+            <input 
+              type="tel" 
+              id="phone" 
+              name="phone" 
+              placeholder="Phone Number" 
+              required
+            >
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              placeholder="Password" 
+              required
+              pattern=".{8,}" 
+              title="Password must be at least 8 characters"
+            >
+          </div>
+
+          <div class="form-control">
+            <label for="confirm-password">Confirm Password</label>
+            <input 
+              type="password" 
+              id="confirm-password" 
+              name="confirm-password" 
+              placeholder="Confirm Password" 
+              required
+              pattern=".{8,}" 
+              title="Password must be at least 8 characters"
+            >
+          </div>
+        </div>
+
+        <button type="submit" class="btn-submit">Create Account</button>
+
+        <p class="login-redirect">
+          Already have an account? <a href="#">Log in</a>
+        </p>
+
+      </form>
+
+    </div>
+  </div>
+
+</body>
+</html>
